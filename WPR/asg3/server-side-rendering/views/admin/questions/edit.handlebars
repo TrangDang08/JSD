@@ -1,0 +1,187 @@
+<style>
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input[type="text"], .form-group select {
+    width: 100%;
+}
+
+#form-group-2 {
+    margin-bottom: 15px;
+}
+
+#form-group-2 label {
+    display: block;
+}
+
+#form-group-2 input[type="text"], .form-group select {
+    width: 100%;
+}
+
+.answer {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.answer>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.answer>div input {
+    margin-right: 15px;
+}
+
+.answer button {
+    display: flex;
+    align-items: center;
+}
+
+.actions {
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+</style>
+
+<div class="container">
+    <h1>Edit question</h1>
+    <form id="frm-create" method="post" action="/admin/questions/{{ question._id }}" name="editForm" onsubmit="return checkValid()">
+        <div class="form-group">
+            <label for="text">Text</label>
+            <input type="text" name="text" value="{{ question.text }}" />
+        </div>
+
+        <div id="form-group-2">
+            <label>Answers: </label>
+            {{#each question.answers}}
+            <div class="answer">
+                <input type="text" name="answers" value="{{ this }}" />
+                <div>
+                    <input name="correctAnswer" type="radio" value="{{@index}}" id="answer{{@index}}" /> <label
+                        for="answer{{@index}}">correct</label>
+                </div>
+                <button type="button" class="btn btn-orange" onclick="remove()"><i class="fas fa-times"></i>
+                    Remove</button>
+            </div>
+            {{/each}}
+        </div>
+        
+        <div class="text-right">
+            <button type="button" class="btn btn-blue" onclick="addNew()"><i class="fas fa-plus"></i> Add</button>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-blue btn-large" type="submit"><i class="fas fa-save"></i> Save</button>
+        </div>
+    </form>
+</div>
+
+<script defer>
+    const max = 10;
+    let formGroup = document.getElementById("form-group-2");
+    let x = {{ question.answers.length }};
+
+    function addNew() {
+        if (x < max) {
+            // container of answer
+            let answer = document.createElement('div');
+            answer.classList.add('answer');
+
+            // answer text
+            let inputAns = document.createElement('input');
+            inputAns.setAttribute('type', 'text');
+            inputAns.setAttribute('name', 'answers');
+
+            // correct radio button
+            let inputCorrect = document.createElement('div');
+
+            let checkCorrect = document.createElement('input');
+            checkCorrect.setAttribute('name', 'correctAnswer');
+            checkCorrect.setAttribute('type', 'radio');
+            checkCorrect.setAttribute('value', x);
+            checkCorrect.setAttribute('id', 'answer' + x);
+
+            let labelCorrect = document.createElement('label');
+            labelCorrect.setAttribute('for', 'answer' + x);
+            labelCorrect.innerText = 'correct';
+
+            inputCorrect.appendChild(checkCorrect);
+            inputCorrect.appendChild(labelCorrect);
+
+            // remove button
+            let buttonContainer = document.createElement('div');
+
+            let removeButton = document.createElement('button');
+            removeButton.setAttribute('type', 'button');
+            removeButton.classList.add('btn');
+            removeButton.classList.add('btn-orange');
+            removeButton.innerHTML = '<i class="fas fa-times"></i>';
+            const removeText = document.createTextNode(" Remove");
+            removeButton.appendChild(removeText);
+
+            buttonContainer.appendChild(removeButton);
+
+            // append 3 child element
+            answer.appendChild(inputAns);
+            answer.appendChild(inputCorrect);
+            answer.appendChild(buttonContainer);
+
+            formGroup.appendChild(answer);
+            x++;
+
+            // remove answer
+            removeButton.addEventListener('click', (event) => {
+                event.preventDefault;
+                let buttonContainer = removeButton.parentElement;
+                let answer = buttonContainer.parentElement;
+                answer.remove();
+                x--;
+            })
+        }
+    }
+
+    // remove available answer from db that been auto-created
+    function remove() {
+        event.preventDefault;
+        let removeButton = event.currentTarget;
+        let answer = removeButton.parentElement;
+        answer.remove();
+        x--;
+    }
+
+    // form validation
+    function checkValid() {
+        // get question text
+        const quesText = document.forms['editForm']['text'].value;
+        // get correct answer value
+        const correctCheck = document.querySelector('input[name="correctAnswer"]:checked');
+        // check question and correct answer if there is empty value
+        if (quesText === '' || correctCheck === null) {
+            alert('You have not fill all information!');
+            return false;
+        }
+        // get answers array and check if there is empty value
+        const ansText = document.getElementsByName('answers');
+		for (i = 0; i < ansText.length; i++) {
+			if (ansText[i].value === '') {
+			 	alert('You have not fill all information!');		
+			 	return false;
+			}
+		}
+        return true;
+    }
+</script>

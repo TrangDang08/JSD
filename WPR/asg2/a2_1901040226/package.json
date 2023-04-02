@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.1.4",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "a2_1901040226",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "Dang Thu Trang",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,257 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+body {
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    color: #222222;
+    font-size: 18px;
+    width: 700px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#course-name {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+#mern-stack {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.mern {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #ffee00;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: rotate(-30deg);
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 425px;
+}
+
+#quiz-name h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 75%;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-family: 'Pangolin', 'Trecbuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+}
+
+#author{
+    margin: 18px 0 32px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#introduction h1{
+    margin: 18px 0;
+}
+
+#introduction p {
+    margin: 18px 0;
+}
+
+.box {
+    background-color: #f1f1f1;
+    margin: 18px 0px;
+    padding: 18px;
+    border: 1px solid #dcdcdc;
+}
+
+.box h1 {
+    margin: 18px;
+    text-align: center;
+}
+
+.box p {
+    margin: 18px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-button-1 {
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 18px;
+}
+
+.blue-button-1:hover {
+    background-color: #0d8bf2;
+}
+
+.blue-button-2 {
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 18px;
+}
+
+.blue-button-2:hover {
+    background-color: #0d8bf2;
+}
+
+.choice-list-small {
+    margin: 30px 0;
+}
+
+.choice-list-small .question-head, .question-content {
+    margin: 30px 0;
+}
+
+.answer-container {
+    display: block;
+    position: relative;
+    margin: 1px 0px;
+}
+
+.hover {
+    background-color: #ddd;
+}
+
+label {
+    background: #f1f1f1;
+    display: block;
+    position: relative;
+    padding: 15px;
+    margin: 1px 0;
+}
+
+/*
+input[type="radio"]:checked + label {
+    background: #ddd;
+}
+*/
+
+.checked {
+    background: #ddd;
+}
+
+label .text {
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.green-button {
+    background-color:  #4CAF50;
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 18px;
+}
+
+.green-button:hover {
+    background-color: #46a049;
+}
+
+.correct-chose-ans {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 5px;
+    background-color: rgba(0,0,0, 0.2);
+    color: white;
+}
+
+.your-ans {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 5px;
+    background-color: rgba(0,0,0, 0.2);
+    color: white;
+}
+
+.correct-ans {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 5px;
+    background-color: rgba(0,0,0, 0.2);
+    color: white;
+}
+
+.correct-chose-ans {
+    background-color: #d4edda;
+}
+
+.your-ans {
+    background-color: #f8d7da;
+}
+
+.correct-ans {
+    background-color: #ddd;
+}
+
+#result-heading {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 699px) {
+    body {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    #mern-stack {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none !important;
+}

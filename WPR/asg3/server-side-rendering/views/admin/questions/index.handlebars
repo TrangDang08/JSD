@@ -1,0 +1,66 @@
+<style>
+#search {
+    text-align: center;
+}
+
+#search input {
+    border-radius: 15px;
+    width: 35%;
+}
+
+table {
+    width: 100%;
+    margin: 15px 0;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+tr, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+}
+</style>
+
+<script defer>
+    function confirmDelete() {
+        const confirmWindow = confirm('Do you want to delete?');
+        if (!confirmWindow) {
+            return false;
+        }
+    }
+</script>
+
+<div class="container">
+    <h1>All questions</h1>
+    <div id="search">
+        <form method="post" action="/admin/questions/search">
+            <input type="text" name="text" placeholder="Search..."/>
+        </form>
+    </div>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Question</th>
+            <th>Answer</th>
+            <th width="210">Actions</th>
+        </tr>
+
+        {{#each questions}}
+        <tr>
+            <td>{{ counter @index }}</td>
+            <td>{{ this.text }}</td>
+            <td>{{ this.answers }}</td>
+            <td>
+                <a href="/admin/questions/{{ this._id }}/edit" class="btn btn-blue"><i class="far fa-edit"></i> Edit</a>
+                <form method="post" action="/admin/questions/{{ this._id }}/destroy">
+                    <button type="submit" class="btn btn-orange" onclick="return confirmDelete()"><i class="far fa-trash-alt"></i> Delete</button>
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+
+    </table>
+</div>

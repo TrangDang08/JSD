@@ -1,0 +1,8 @@
+
+Python is an open source free programming language
+
+It is also called general purpose programming language 
+
+Python is used in web programming data science artificial intelligence and many scientific applications 
+
+Learning python allows the programmer to focus on solving problems rather than focusing on syntax
