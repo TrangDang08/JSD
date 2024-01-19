@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "XPath",
+      "value": "//span[@class\u003d\u0027nav-text\u0027 and text()\u003d\u0027Product Categories\u0027]",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "a8bb3a39-9c9f-4054-ae44-ad72b93b6e75"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "a8bb3a39-9c9f-4054-ae44-ad72b93b6e75"
+}

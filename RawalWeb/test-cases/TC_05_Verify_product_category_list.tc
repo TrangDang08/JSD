@@ -1,0 +1,399 @@
+{
+  "varNode": {
+    "descendants": {
+      "INPUT": {
+        "descendants": {
+          "header": {
+            "descendants": {},
+            "value": "ID, Name, Description, Slug, Action"
+          },
+          "expectedRowNum": {
+            "descendants": {},
+            "value": "10"
+          }
+        }
+      },
+      "REPO": {
+        "descendants": {}
+      },
+      "OUTPUT": {
+        "descendants": {
+          "rowNum": {
+            "descendants": {},
+            "value": ""
+          },
+          "tableRow": {
+            "descendants": {},
+            "value": ""
+          }
+        }
+      },
+      "KEYWORD": {
+        "descendants": {}
+      }
+    },
+    "value": "45e6c5f0-0132-49be-8018-9b12769bd069"
+  },
+  "platform": {
+    "type": "Web",
+    "displayName": "Web"
+  },
+  "setUpList": [
+    {
+      "uuid": "948cc501-fb7c-4a22-90ca-cef65e133b1b",
+      "name": "Maximize Current Window",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "246",
+      "keywordSource": "internal",
+      "keywordMethod": "maximizeCurrentWindow",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "a18aaf43-7cd2-4d69-9cf4-a77c072de817",
+      "name": "Open Browser",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [
+        {
+          "name": "url",
+          "type": "String",
+          "defaultValue": "`$.GLOBAL.url`",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "118",
+      "keywordSource": "internal",
+      "keywordMethod": "openBrowser",
+      "description": "",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    }
+  ],
+  "stepList": [
+    {
+      "uuid": "203563be-c594-431a-b179-2f940bed529a",
+      "name": "login: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [
+        {
+          "name": "Email",
+          "type": "String",
+          "defaultValue": "`$.GLOBAL.email`",
+          "source": ""
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "defaultValue": "`$.GLOBAL.password`",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "57d119d8-3242-44b5-ae62-a7986280f8c8",
+      "keywordSource": "custom",
+      "keywordMethod": "login",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "7a4cf035-bf57-4717-bda0-587b3fc14572",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "a55e6dac-d17b-414d-810c-edbd50d8786a",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "55c338e4-1e42-469a-8af6-d0cd812b171c",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "a8bb3a39-9c9f-4054-ae44-ad72b93b6e75",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "72463b47-d7e3-4e3e-b137-72ea011f8b22",
+      "name": "Wait For Element Present",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "target",
+          "type": "Web UIObject",
+          "defaultValue": "ad46643c-82b6-4718-8ef9-da09c1efb78d",
+          "source": ""
+        }
+      ],
+      "params": [
+        {
+          "name": "timeout",
+          "type": "Integer",
+          "defaultValue": "10",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "Boolean",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "193",
+      "keywordSource": "internal",
+      "keywordMethod": "waitForElementPresent",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "a9073295-3544-4c05-b309-bd5429d30c5e",
+      "name": "compareElementsText: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Elements",
+          "type": "UIObject",
+          "defaultValue": "ad46643c-82b6-4718-8ef9-da09c1efb78d",
+          "source": ""
+        }
+      ],
+      "params": [
+        {
+          "name": "Expected Text",
+          "type": "String",
+          "defaultValue": "`$.this.INPUT.header`",
+          "source": ""
+        },
+        {
+          "name": "Separator",
+          "type": "String",
+          "defaultValue": ", ",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "18053709-fe6f-4429-b4c8-33d012bdcf23",
+      "keywordSource": "custom",
+      "keywordMethod": "compareElementsText",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "5e9ae4de-75c5-4ae6-a547-5debf7dff2c6",
+      "name": "Wait For Element Present",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "target",
+          "type": "Web UIObject",
+          "defaultValue": "277de9f4-edc9-4cf2-ab1d-4720791253d2",
+          "source": ""
+        }
+      ],
+      "params": [
+        {
+          "name": "timeout",
+          "type": "Integer",
+          "defaultValue": "10",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "Boolean",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "193",
+      "keywordSource": "internal",
+      "keywordMethod": "waitForElementPresent",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "747d42df-4b9f-4ad9-ad80-29b19c4f2dd1",
+      "name": "Get Elements Count",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "target",
+          "type": "Web UIObject",
+          "defaultValue": "277de9f4-edc9-4cf2-ab1d-4720791253d2",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "`$.this.OUTPUT.rowNum`",
+        "type": "Integer",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "267",
+      "keywordSource": "internal",
+      "keywordMethod": "getElementsCount",
+      "description": "",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "637c7c49-762d-4f88-bc55-8eabb2dad9b2",
+      "name": "Verify Number Comparison",
+      "platform": {
+        "type": "core",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [
+        {
+          "name": "number",
+          "type": "Double",
+          "defaultValue": "`$.this.OUTPUT.tableRow`",
+          "source": ""
+        },
+        {
+          "name": "compareOperator",
+          "type": "String",
+          "defaultValue": "\u003d\u003d",
+          "source": ""
+        },
+        {
+          "name": "anotherNumber",
+          "type": "Double",
+          "defaultValue": "`$.this.INPUT.expectedRowNum`",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "26",
+      "keywordSource": "internal",
+      "keywordMethod": "verifyNumberComparison",
+      "description": "",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    }
+  ],
+  "tearDownList": [],
+  "managerId": "",
+  "uuid": "45e6c5f0-0132-49be-8018-9b12769bd069"
+}

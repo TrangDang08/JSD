@@ -1,0 +1,28 @@
+{
+  "locatorList": [
+    {
+      "strategy": "ID",
+      "value": "email",
+      "type": [],
+      "active": true
+    },
+    {
+      "strategy": "Name",
+      "value": "email",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "d5c56776-2b00-46a3-8592-ba9c8fb34c92"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "d5c56776-2b00-46a3-8592-ba9c8fb34c92"
+}

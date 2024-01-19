@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "XPath",
+      "value": "(//span[text()\u003d\u0027Choose\u0027]/..)[1]",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "ceea3aca-bee5-48b5-819b-b8fc0d64fbd2"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "ceea3aca-bee5-48b5-819b-b8fc0d64fbd2"
+}

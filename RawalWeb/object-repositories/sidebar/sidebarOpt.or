@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "XPath",
+      "value": "//div[@id\u003d\u0027accordion\u0027]/ul/li/a/span[@class\u003d\u0027nav-text\u0027]",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "2c7196ae-f0f6-4afb-8d50-bf05be91e6ea"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "2c7196ae-f0f6-4afb-8d50-bf05be91e6ea"
+}

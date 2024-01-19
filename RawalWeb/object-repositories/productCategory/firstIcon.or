@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "XPath",
+      "value": "(//div[@class\u003d\u0027thumbnail-imges \u0027])[11]",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "aa681bc2-1dfa-4f73-b39e-18b06f02a300"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "aa681bc2-1dfa-4f73-b39e-18b06f02a300"
+}

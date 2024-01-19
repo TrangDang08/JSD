@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "XPath",
+      "value": "//div[contains(@class, \u0027v-toast-success\u0027)]",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "8570a1c2-740c-4f77-a3ca-5384716c8c2f"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "8570a1c2-740c-4f77-a3ca-5384716c8c2f"
+}

@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "ID",
+      "value": "tc_aside_menu",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "6b7081df-a873-4a4a-86e4-769628ce5e9f"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "6b7081df-a873-4a4a-86e4-769628ce5e9f"
+}

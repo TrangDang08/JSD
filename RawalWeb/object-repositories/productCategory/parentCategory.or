@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "XPath",
+      "value": "//label[text()\u003d\u0027Parent Category\u0027]/following::select",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "472afc28-18b6-47ef-961b-5a8f86a6eeab"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "472afc28-18b6-47ef-961b-5a8f86a6eeab"
+}

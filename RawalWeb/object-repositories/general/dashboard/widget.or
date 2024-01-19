@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "XPath",
+      "value": "//div[contains(@class, \u0027card-custom\u0027)]//descendant::div[@class\u003d\u0027card-body\u0027]/h3",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "4fdb655f-0b81-495a-8fec-7d73a397b978"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "4fdb655f-0b81-495a-8fec-7d73a397b978"
+}

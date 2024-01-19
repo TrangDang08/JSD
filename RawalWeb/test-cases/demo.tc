@@ -1,0 +1,141 @@
+{
+  "varNode": {
+    "descendants": {
+      "INPUT": {
+        "descendants": {
+          "title": {
+            "descendants": {},
+            "value": "THƯ NGỎ ỦNG HỘ CHƯƠNG TRÌNH TÌNH NGUYỆN \"ĐÔNG ẤM NẬM COÓNG\";Thông báo về việc thu Học phí học kỳ 2 (hệ CQ, song ngành) năm học 2023-2024 các khóa 2020, 2021, 2022, 2023;Thông báo Kết quả chấm bài thu hoạch - Tuần SHCD đầu khóa đối với sinh viên khóa 2023;Lop PIT chiều thứ 6;SS2 - Các lớp 01 03 04 05"
+          }
+        }
+      },
+      "REPO": {
+        "descendants": {}
+      },
+      "OUTPUT": {
+        "descendants": {}
+      },
+      "KEYWORD": {
+        "descendants": {}
+      }
+    },
+    "value": "8cc54719-1736-425b-9ef9-501135032bf4"
+  },
+  "platform": {
+    "type": "Web",
+    "displayName": "Web"
+  },
+  "setUpList": [],
+  "stepList": [
+    {
+      "uuid": "c7384114-07a8-4307-8c91-88c16dcb4ec5",
+      "name": "Open Browser",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [
+        {
+          "name": "url",
+          "type": "String",
+          "defaultValue": "https://lms.fit.hanu.vn/",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "118",
+      "keywordSource": "internal",
+      "keywordMethod": "openBrowser",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "b1c97bf6-5798-4e0d-b199-134cfb361895",
+      "name": "printTitle: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Repo1",
+          "type": "UIObject",
+          "defaultValue": "36fd6630-1aae-4fd6-a83d-6580a49bcef6",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "1012bbff-9d69-4137-848c-45b35b86e7d4",
+      "keywordSource": "custom",
+      "keywordMethod": "printTitle",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "4809d9be-2d44-4a60-8adf-b7121e249f02",
+      "name": "compareElementsText: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Elements",
+          "type": "UIObject",
+          "defaultValue": "36fd6630-1aae-4fd6-a83d-6580a49bcef6",
+          "source": ""
+        }
+      ],
+      "params": [
+        {
+          "name": "Expected Text",
+          "type": "String",
+          "defaultValue": "`$.this.INPUT.title`",
+          "source": ""
+        },
+        {
+          "name": "Separator",
+          "type": "String",
+          "defaultValue": ";",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "18053709-fe6f-4429-b4c8-33d012bdcf23",
+      "keywordSource": "custom",
+      "keywordMethod": "compareElementsText",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    }
+  ],
+  "tearDownList": [],
+  "managerId": "",
+  "uuid": "8cc54719-1736-425b-9ef9-501135032bf4"
+}

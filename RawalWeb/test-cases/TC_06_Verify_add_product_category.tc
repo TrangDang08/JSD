@@ -1,0 +1,707 @@
+{
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      },
+      "KEYWORD": {
+        "descendants": {}
+      },
+      "INPUT": {
+        "descendants": {
+          "parentCategory": {
+            "descendants": {},
+            "value": "Fruits"
+          },
+          "categoryName": {
+            "descendants": {},
+            "value": "Demo akaAT"
+          },
+          "expectedSuccessMessage": {
+            "descendants": {},
+            "value": "Category has been updated successfully"
+          },
+          "slug": {
+            "descendants": {},
+            "value": ""
+          },
+          "categoryDescription": {
+            "descendants": {},
+            "value": "Demo akaAT"
+          }
+        }
+      },
+      "OUTPUT": {
+        "descendants": {
+          "successMessage": {
+            "descendants": {},
+            "value": ""
+          }
+        }
+      }
+    },
+    "value": "7e4ef7f1-ecff-46fc-b6c9-d1f17687d874"
+  },
+  "platform": {
+    "type": "Web",
+    "displayName": "Web"
+  },
+  "setUpList": [
+    {
+      "uuid": "e423930c-7164-4d9d-b22a-96b9ca17e288",
+      "name": "Maximize Current Window",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "246",
+      "keywordSource": "internal",
+      "keywordMethod": "maximizeCurrentWindow",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "6cf1735b-5960-492a-b57f-5fde2739421f",
+      "name": "Open Browser",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [
+        {
+          "name": "url",
+          "type": "String",
+          "defaultValue": "`$.GLOBAL.url`",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "118",
+      "keywordSource": "internal",
+      "keywordMethod": "openBrowser",
+      "description": "",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    }
+  ],
+  "stepList": [
+    {
+      "uuid": "2b4387b7-d5c9-469c-b35a-8ce431aa5f4b",
+      "name": "login: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [
+        {
+          "name": "Email",
+          "type": "String",
+          "defaultValue": "`$.GLOBAL.email`",
+          "source": ""
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "defaultValue": "`$.GLOBAL.password`",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "57d119d8-3242-44b5-ae62-a7986280f8c8",
+      "keywordSource": "custom",
+      "keywordMethod": "login",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "58d3d5c9-ee48-4452-89c2-e48109ce0cc4",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "a55e6dac-d17b-414d-810c-edbd50d8786a",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "73bae85d-a0d5-430c-a4bb-35dd27b54747",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "a8bb3a39-9c9f-4054-ae44-ad72b93b6e75",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "bdfde4eb-2951-438f-91d4-4ddb4e50e0aa",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "624a7f17-614f-453d-afd0-e2de9b919e5b",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "6de58282-fd40-4b57-a06c-4d8b5376bf53",
+      "name": "addProductCateLg: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [
+        {
+          "name": "Category Name",
+          "type": "String",
+          "defaultValue": "`$.this.INPUT.categoryName`",
+          "source": ""
+        },
+        {
+          "name": "Category Description",
+          "type": "String",
+          "defaultValue": "`$.this.INPUT.categoryDescription`",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "ba4dd5d1-d103-4cb8-a58b-605ed4b0fff2",
+      "keywordSource": "custom",
+      "keywordMethod": "addProductCateLg",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "f9c238a0-64e0-4142-a969-f9cd5b9852d5",
+      "name": "Select Option By Label",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "target",
+          "type": "Web UIObject",
+          "defaultValue": "472afc28-18b6-47ef-961b-5a8f86a6eeab",
+          "source": ""
+        }
+      ],
+      "params": [
+        {
+          "name": "label",
+          "type": "String",
+          "defaultValue": "`$.this.INPUT.parentCategory`",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "162",
+      "keywordSource": "internal",
+      "keywordMethod": "selectOptionByLabel",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "ba3bd87d-1a90-4bbc-85bf-d44857ed6507",
+      "name": "generateSlug: String",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [],
+      "output": {
+        "name": "`$.this.INPUT.slug`",
+        "type": "String",
+        "defaultValue": ""
+      },
+      "keywordPath": "8310b72d-87fb-4060-9778-99b96d4983d7",
+      "keywordSource": "custom",
+      "keywordMethod": "generateSlug",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "6fd5af55-b567-4abb-ae42-cafe077d9f41",
+      "name": "Send Keys",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "target",
+          "type": "Web UIObject",
+          "defaultValue": "dffa2615-06ce-4b27-a595-a3e9c41d7cfc",
+          "source": ""
+        }
+      ],
+      "params": [
+        {
+          "name": "keys",
+          "type": "String",
+          "defaultValue": "`$.this.INPUT.slug`",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "153",
+      "keywordSource": "internal",
+      "keywordMethod": "sendKeys",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "6b0c40b1-a2d0-41a1-883e-f37e800fadbd",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "456e19ea-2afd-42a0-b4c6-a13156402aca",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "9e65398c-99c2-4545-a6c8-bdb0394f7e92",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "5bb26036-6e62-45d2-85da-da12c33240a2",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "e1c35157-6d38-4f76-9d79-9eff6bd5d542",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "ceea3aca-bee5-48b5-819b-b8fc0d64fbd2",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "cc020a1a-9cb7-4ae9-8a43-5d7902f30f2b",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "62ca7024-c2a6-4b6c-8b2e-2786d52c3efb",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "94e1faa2-2ea6-477c-baef-63b693207a5a",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "aa681bc2-1dfa-4f73-b39e-18b06f02a300",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "50e430a0-8080-420f-ae6d-5865ec30083d",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "5460aefe-043e-4354-9ae7-4c5be28e4396",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "1af6b1b9-0c0b-46b9-b3f3-29bafbf13935",
+      "name": "waitAndClick: void",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "Web Element",
+          "type": "UIObject",
+          "defaultValue": "ebbced92-d64b-444f-855f-ffdd03ba1d00",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": ""
+      },
+      "keywordPath": "4af9eb6e-d013-4926-ad9a-28cf88cb9821",
+      "keywordSource": "custom",
+      "keywordMethod": "waitAndClick",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "8e346702-92aa-4680-9994-5d3aaee7002d",
+      "name": "Wait For Element Visible",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "target",
+          "type": "Web UIObject",
+          "defaultValue": "8570a1c2-740c-4f77-a3ca-5384716c8c2f",
+          "source": ""
+        }
+      ],
+      "params": [
+        {
+          "name": "timeout",
+          "type": "Integer",
+          "defaultValue": "5",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "Boolean",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "195",
+      "keywordSource": "internal",
+      "keywordMethod": "waitForElementVisible",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "f6c4c9b7-d128-43cc-8cbb-09a80c14624d",
+      "name": "Get Text",
+      "platform": {
+        "type": "Web",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [
+        {
+          "name": "target",
+          "type": "Web UIObject",
+          "defaultValue": "8570a1c2-740c-4f77-a3ca-5384716c8c2f",
+          "source": ""
+        }
+      ],
+      "params": [],
+      "output": {
+        "name": "`$.this.OUTPUT.successMessage`",
+        "type": "String",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "149",
+      "keywordSource": "internal",
+      "keywordMethod": "getText",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    },
+    {
+      "uuid": "12e4486f-cc05-4069-8c5d-8c6ba53c1751",
+      "name": "Verify Text Equal",
+      "platform": {
+        "type": "core",
+        "displayName": "",
+        "capUUID": ""
+      },
+      "objRepo": [],
+      "params": [
+        {
+          "name": "text",
+          "type": "String",
+          "defaultValue": "`$.this.OUTPUT.successMessage`",
+          "source": ""
+        },
+        {
+          "name": "anotherText",
+          "type": "String",
+          "defaultValue": "`$.this.INPUT.expectedSuccessMessage`",
+          "source": ""
+        }
+      ],
+      "output": {
+        "name": "",
+        "type": "void",
+        "defaultValue": "",
+        "source": ""
+      },
+      "keywordPath": "23",
+      "keywordSource": "internal",
+      "keywordMethod": "verifyTextEqual",
+      "description": "",
+      "failureHandling": "STOP_ON_FAILURE",
+      "failureDescription": "",
+      "enable": true,
+      "captureImg": false
+    }
+  ],
+  "tearDownList": [],
+  "managerId": "",
+  "uuid": "7e4ef7f1-ecff-46fc-b6c9-d1f17687d874"
+}

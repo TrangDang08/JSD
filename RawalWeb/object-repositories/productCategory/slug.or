@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "XPath",
+      "value": "//label[text()\u003d\u0027Slug\u0027]/following::input",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "dffa2615-06ce-4b27-a595-a3e9c41d7cfc"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "dffa2615-06ce-4b27-a595-a3e9c41d7cfc"
+}

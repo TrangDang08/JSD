@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "Tag Name",
+      "value": "th",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "ad46643c-82b6-4718-8ef9-da09c1efb78d"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "ad46643c-82b6-4718-8ef9-da09c1efb78d"
+}
